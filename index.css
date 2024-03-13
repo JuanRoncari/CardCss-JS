@@ -1,0 +1,205 @@
+*{
+    box-sizing:border-box;
+    margin: 0;
+}
+
+.menu{
+    display: flex;
+    justify-content: end;
+    list-style: none;
+}
+.nav-menu{
+    gap: 20px;
+    color: white;
+    font-size: 1.4rem;
+    margin: 10px;
+    background:none;
+}
+
+#jogar:hover{
+    background: #DC143C;
+    transition: 0.3s;
+}
+header{
+    background:linear-gradient(#042326,#0A3A40);
+    display: flex;
+    justify-content: end;
+}
+.card{
+    margin: 10px auto;
+    width: 200px;
+    height: auto;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0px 0px 120px red;
+}
+
+.card:nth-child(1){
+    box-shadow: 10px 2px 30px blue;
+
+}
+
+.card:nth-child(2){
+    box-shadow: 10px 2px 30px white;
+    
+}
+
+.card:nth-child(3){
+    box-shadow: 10px 2px 30px forestgreen;
+    
+}
+
+.card:nth-child(4){
+    box-shadow: 10px 2px 30px darkgrey;
+    
+}
+
+.card:nth-child(5){
+    box-shadow: 10px 2px 30px navy;
+    
+}
+
+.card:nth-child(6){
+    box-shadow: 10px 2px 30px #FFD700;
+    
+}
+.card:nth-child(7){
+    box-shadow: 10px 2px 30px #DEB887;
+    
+}
+.card:nth-child(8){
+    box-shadow: 10px 2px 30px 	#B8860B;
+    
+}
+.card:nth-child(9){
+    box-shadow: 10px 2px 30px 	DarkOrange;
+    
+}
+.card:nth-child(10){
+    box-shadow: 10px 2px 30px 	#FF00FF;
+    
+}
+.card:nth-child(11){
+    box-shadow: 10px 2px 30px 	#A9A9A9;
+    
+}
+.card:nth-child(12){
+    box-shadow: 10px 2px 30px 	#DC143C;
+    
+}
+
+
+body{
+    background: url(Floresta\ 1.jpg);
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+.container-grid{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin-top: 140px;
+}
+
+@media(max-width:600px){
+    .container-grid{
+        display: grid;
+    grid-template-columns: 1fr;
+    flex-direction: column;
+    margin-top: 80px;
+    }
+
+    .nav-menu{
+        margin: 0;
+    }
+
+    body{
+        background: url(Floresta\ 1.jpg);
+        background-repeat: no-repeat;
+        background-size: 1200%;
+    }
+}
+img{
+    display:block;
+    width: 200px;
+    height: 200px;
+    border-radius: 8px 8px 0px 0px;
+}
+
+.titulo{
+    text-align: center;
+    color: black;
+}
+a{
+    padding: 10px;
+    background-color: black;
+    display: block;
+    color: white;
+    text-decoration: none;
+    font-size: 1.5rem;
+    border-radius: 0px 0px 4px 4px;
+}
+
+
+.js-card .ativo:hover{
+    animation: show 0.6s reverse;  
+}
+@keyframes show{
+    to{
+        opacity: 1;
+        transform: rotateZ(360deg)
+    }
+}
+
+
+#bixo1:hover{
+    background: blue;
+}
+
+#bixo2:hover{
+    background: white;
+    color: black;
+}
+
+#bixo3:hover{
+    background: forestgreen;
+}
+
+#bixo4:hover{
+    background: darkgrey;
+}
+
+#bixo5:hover{
+    background: navy;
+}
+
+#bixo6:hover{
+    background: #FFD700;
+}
+
+#bixo7:hover{
+    background: #DEB887;
+    color: black;
+}
+
+#bixo8:hover{
+    background: #B8860B;
+}
+
+#bixo9:hover{
+    background: DarkOrange;
+}
+
+#bixo10:hover{
+    background: #FF00FF;
+}
+
+#bixo11:hover{
+    background: #A9A9A9;
+}
+
+#bixo12:hover{
+    background: #DC143C;
+}
